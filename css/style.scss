@@ -4,6 +4,17 @@ $font: 'FontAwesome';
 $black: #2B2D42;
 $red: #D80032;
 $yellow: #FFD166;
+// @font-face {
+//     font-family: 'BlairMdITC TT';
+//     src: url('../fonts/BlairMdITCTTMedium.eot');
+//     src: url('../fonts/BlairMdITCTTMedium.eot?#iefix') format('embedded-opentype'),
+//         url('../fonts/BlairMdITCTTMedium.woff2') format('woff2'),
+//         url('../fonts/BlairMdITCTTMedium.woff') format('woff'),
+//         url('../fonts/BlairMdITCTTMedium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+//     font-display: swap;
+// }
 html {
     overflow-x: hidden;
 }
@@ -16,7 +27,7 @@ body {
     transition: .3s all; 
     position: relative;
     font-weight: normal;
-    font-family: 'Open Sans';
+    font-family: 'BlairMdITC TT';
     h1, h2, h3, h4, h5, h6, p, label, ul, li, .card, a { 
         text-decoration: none !important;      
         transition: .3s all; 
