@@ -1,0 +1,163 @@
+*{margin: 0; padding: 0}
+@import "fonts.scss";
+$font: 'FontAwesome'; 
+$black: #2B2D42;
+$red: #D80032;
+$yellow: #FFD166;
+html {
+    overflow-x: hidden;
+}
+body {
+    box-sizing: border-box;
+    color: #333333;
+    padding: 0 !important; 
+    font-size: 15px;  
+    line-height: 1.6;
+    transition: .3s all; 
+    position: relative;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    h1, h2, h3, h4, h5, h6, p, label, ul, li, .card, a { 
+        text-decoration: none !important;      
+        transition: .3s all; 
+        margin-bottom: 0;  
+        outline: none !important;  
+    }    
+    a { 
+        transition: .3s all !important; 
+        color: #333333;
+        &:hover {
+            // color: $oran;    
+        }  
+    }   
+    ul {    
+    	padding: 0; 
+    	margin: 0; 
+    }   
+    input, button {  
+    	outline: none !important; 
+    	box-shadow: none; 
+    	transition: .3s all; 
+    } 
+    .slick-slide {
+    	height: auto;  
+        img {
+            display: inline;
+        }
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+    }
+    .container-fluid {
+        padding: 0 60px;
+    } 
+    img {
+        max-width: 100%;
+    }
+}
+.slick-slider {
+    margin-bottom: 0;
+}
+.avarta {
+    overflow: hidden;
+    img { 
+        transition: .7s all;
+        &:hover {
+            transition: .7s all;
+            transform: scale(1.08);
+        }
+    }
+}  
+ 
+.bayleyssvg {
+  display: block;
+  width: 400px;
+}
+
+#bayleys {
+  fill: #231f20;
+  stroke: #231f20;
+}
+
+#bayleys {
+  stroke-width: 0;
+  animation: logo 6s linear infinite;
+}
+
+@keyframes logo {
+  0% {
+    stroke-width: 1pt;
+    stroke-dashoffset: 1800;
+    fill-opacity: 0;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-width: 0pt;
+  }
+}
+
+#eff-logo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+ %transition_all_03s {
+  transition:all .3s ease;
+}
+%backface_visibility_hidden{
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+.menupanel {
+  &.opened {
+    background: url(https://uvbypp.cc/wp-content/themes/uv2016/dist/img/download3.png);
+    // &:after {
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   background: url(https://uvbypp.cc/wp-content/themes/uv2016/dist/img/download3.png);
+    //   -webkit-animation: grain 5s steps(10) infinite;
+    //   -moz-animation: grain 5s steps(10) infinite;
+    //   -ms-animation: grain 5s steps(10) infinite;
+    //   animation: grain 5s steps(10) infinite;
+    // }
+  }
+}
+
+
+.eff-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1001;
+  transition: .3s all;
+  &.active {
+    transition: .3s all;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+#container div.slides div.info div.slidenav a:after, #container div.slides div.info div.slidenav a:hover:after {
+  display: none;
+}

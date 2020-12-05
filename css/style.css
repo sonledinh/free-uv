@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/sans/OpenSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-BoldItalic.woff2") format("woff2"), url("../fonts/sans/OpenSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/sans/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-Italic.woff2") format("woff2"), url("../fonts/sans/OpenSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/sans/OpenSans-ExtraBoldItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/sans/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-Light.woff2") format("woff2"), url("../fonts/sans/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/sans/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-SemiBoldItalic.woff2") format("woff2"), url("../fonts/sans/OpenSans-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap; }
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/sans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/sans/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+.pt-100 {
+  padding-top: 100px; }
+
+.pb-100 {
+  padding-bottom: 100px; }
+
+.pt-80 {
+  padding-top: 80px; }
+
+.pb-80 {
+  padding-bottom: 80px; }
+
+.pt-60 {
+  padding-top: 60px; }
+
+.pb-60 {
+  padding-bottom: 60px; }
+
+.pt-50 {
+  padding-top: 50px; }
+
+.pb-50 {
+  padding-bottom: 50px; }
+
+.pt-40 {
+  padding-top: 40px; }
+
+.pb-40 {
+  padding-bottom: 40px; }
+
+.pt-30 {
+  padding-top: 30px; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  box-sizing: border-box;
+  color: #333333;
+  padding: 0 !important;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: .3s all;
+  position: relative;
+  font-weight: normal;
+  font-family: 'Open Sans'; }
+  body h1, body h2, body h3, body h4, body h5, body h6, body p, body label, body ul, body li, body .card, body a {
+    text-decoration: none !important;
+    transition: .3s all;
+    margin-bottom: 0;
+    outline: none !important; }
+  body a {
+    transition: .3s all !important;
+    color: #333333; }
+  body ul {
+    padding: 0;
+    margin: 0; }
+  body input, body button {
+    outline: none !important;
+    box-shadow: none;
+    transition: .3s all; }
+  body .slick-slide {
+    height: auto; }
+    body .slick-slide img {
+      display: inline; }
+  body .container {
+    width: 100%;
+    max-width: 1200px; }
+  body .container-fluid {
+    padding: 0 60px; }
+  body img {
+    max-width: 100%; }
+
+.slick-slider {
+  margin-bottom: 0; }
+
+.avarta {
+  overflow: hidden; }
+  .avarta img {
+    transition: .7s all; }
+    .avarta img:hover {
+      transition: .7s all;
+      transform: scale(1.08); }
+
+.bayleyssvg {
+  display: block;
+  width: 400px; }
+
+#bayleys {
+  fill: #231f20;
+  stroke: #231f20; }
+
+#bayleys {
+  stroke-width: 0;
+  animation: logo 6s linear infinite; }
+
+@keyframes logo {
+  0% {
+    stroke-width: 1pt;
+    stroke-dashoffset: 1800;
+    fill-opacity: 0; }
+  50% {
+    fill-opacity: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-width: 0pt; } }
+#eff-logo {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menupanel.opened {
+  background: url(https://uvbypp.cc/wp-content/themes/uv2016/dist/img/download3.png); }
+
+.eff-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1001;
+  transition: .3s all; }
+  .eff-logo.active {
+    transition: .3s all;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none; }
+
+#container div.slides div.info div.slidenav a:after, #container div.slides div.info div.slidenav a:hover:after {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
